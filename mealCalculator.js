@@ -70,16 +70,13 @@ var diners = [diner1, diner2, diner3];
 
 var TotalTab = new TotalBill(diners);
 
-console.log(diner1.name + '\'s meal is ' + diner1.mealTab() + ', plus ' + diner1.tax() + ' tax for a total of ' + (+diner1.mealTab() +  +diner1.tax()));
+console.log(diner1.name + '\'s meal is ' + diner1.mealTab() + ', plus ' + diner1.tax() + ' tax for a total of $' + (+diner1.mealTab() +  +diner1.tax()) + '.');
 console.log(diner1.name + ' also owes a $' + diner1.tip() + ' tip.');
-console.log(diner2.name + '\'s meal is ' + diner2.mealTab() + ', plus ' + diner2.tax() + ' tax for a total of ' + (+diner2.mealTab() +  +diner2.tax()));
+console.log(diner2.name + '\'s meal is ' + diner2.mealTab() + ', plus ' + diner2.tax() + ' tax for a total of $' + (+diner2.mealTab() +  +diner2.tax()) + '.');
 console.log(diner2.name + ' also owes a $' + diner2.tip() + ' tip.');
-console.log(diner3.name + '\'s meal is ' + diner3.mealTab() + ', plus ' + diner3.tax() + ' tax for a total of ' + (+diner3.mealTab() +  +diner3.tax()));
+console.log(diner3.name + '\'s meal is ' + diner3.mealTab() + ', plus ' + diner3.tax() + ' tax for a total of $' + (+diner3.mealTab() +  +diner3.tax()) + '.');
 console.log(diner3.name + ' also owes a $' + diner3.tip() + ' tip.');
 
-console.log('The diners at the table are ');
-for (var i=0; i < TotalTab.diners.length; i++) {
-     console.log(TotalTab.diners[i].name + ', ');
-}
-console.log('The total cost for all meals, plus tax, is: ' + TotalTab.totalMealsAndTx());
-console.log('The total tip owed by all diners is: ' + TotalTab.totalTip());
+console.log('The diners at the table are ' + diner1.name + ', ' + diner2.name + ', ' + 'and ' + diner3.name + '.');
+console.log('The total cost for all meals, plus tax, is: $' + TotalTab.totalMealsAndTx());
+console.log('The total tip owed by all diners is: $' + TotalTab.totalTip());
