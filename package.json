@@ -1,0 +1,11 @@
+{
+  "name": "meal-calculator",
+  "version": "1.0.0",
+  "description": "thinkful-node-project",
+  "main": "mealCalculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
